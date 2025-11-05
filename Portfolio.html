@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Christian - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Dark Mode Toggle and CV Download -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">KRAMM</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#feedback">Client Feedback</a></li>
+                <li><a href="#why-choose">Why Choose Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="header-actions">
+                <!-- Dark Mode Toggle -->
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <!-- CV Download Button -->
+                <a href="https://drive.google.com/file/d/1KUVy6DJXTcQ8ZODVVlps42ivp4KR0yh8/view?usp=sharing" class="cv-download" download>
+                    📄 Download CV
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi! I Am <span class="highlight">Mark Christian</span></h1>
+                    <p>A passionate creative professional specializing in Research, Thesis Crafting, FullStack Web Development, UI/UX design, Graphic Design and digital innovation. I transform ideas into beautiful, functional experiences.</p>
+                    <a href="#contact" class="cta-button">Let's Work Together</a>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="Images/Pic.jpg" alt="Mark Christian">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-stats fade-in">
+                    <div class="stat-card">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Crafting Digital Experiences</h3>
+                    <p>With over 6 years of experience in the creative industry, I specialize in creating compelling digital experiences that bridge the gap between aesthetics and functionality. My passion lies in understanding user needs and translating them into intuitive, beautiful designs.</p>
+                    <p>I believe in the power of good design to solve real problems and create meaningful connections between brands and their audiences. Every project is an opportunity to push creative boundaries while maintaining focus on usability and performance.</p>
+                </div>
+            </div>
+            
+            <div class="awards fade-in">
+                <div class="award-badge">
+                    <span class="award-icon">🏆</span>
+                    <span>Thesis Maker</span>
+                </div>
+                <div class="award-badge">
+                    <span class="award-icon">⭐</span>
+                    <span>FullStack Developer</span>
+                </div>
+                <div class="award-badge">
+                    <span class="award-icon">🎯</span>
+                    <span>Graphic Designer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section-title fade-in">Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">📑</div>
+                    <h3>Thesis Development</h3>
+                    <p>Providing comprehensive thesis-making services, from topic conceptualization to final manuscript, ensuring well-researched, structured, and professionally written academic work.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">💻</div>
+                    <h3>FullStack Web Development</h3>
+                    <p>Creating responsive, performant websites using modern technologies and best practices. From concept to deployment, I build digital solutions that work.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-centered experiences that are both beautiful and functional. Every interface is crafted with careful attention to user needs and brand identity.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile App Development</h3>
+                    <p>Specializing in mobile-first development approaches that ensure your product looks and works great on any device, from phones to tablets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+   <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title fade-in">My Work</h2>
+            
+            <!-- Project Categories -->
+            <div class="project-tabs fade-in">
+                <button class="tab-btn active" data-category="website">Website</button>
+                <button class="tab-btn" data-category="thesis">Thesis</button>
+                <button class="tab-btn" data-category="graphics">Graphics Design</button>
+            </div>
+
+            <!-- Website Projects -->
+            <div class="project-category active" id="website">
+                <h3 class="category-title">Website Development Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-image web-project">
+                            <img src="Images\ManilaPro.jpg" alt="MANILA PRO">
+                            <div class="project-overlay">
+                                <a href="https://manila-pro.vercel.app/" class="project-link" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>MANILA PRO – Real Estate with Forecasting and Chat App</h4>
+                            <p>A dynamic real estate platform integrating property listings with predictive analytics for market trends and an interactive chat system for seamless client-agent communication.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">TailwindCSS </span>
+                                <span class="project-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image web-project">
+                            <img src="Images\2dMapping.png" alt="2D MAPPING">
+                            <div class="project-overlay">
+                                <a href="https://www.agrimapper.online/" class="project-link" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>2D MAPPING – Farm Mapping and Crop Management System</h4>
+                            <p>An agricultural web app that visualizes farm layouts in 2D, allowing users to map, monitor, and manage crop data efficiently.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Visual Studio Code</span>
+                                <span class="project-tag">NextJS </span>
+                                <span class="project-tag">NextAuth </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image web-project">
+                            <img src="Images/ERMM.png" alt="ERMS">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>ERMS – Electronic Records Management System for Schools</h4>
+                            <p>A digital records management platform designed for educational institutions, featuring a recommender system for student and faculty needs.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">ReactJS </span>
+                                <span class="project-tag">NextAuth </span>
+                                <span class="project-tag">TailwindCSS </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image web-project">
+                            <img src="Images/Maristela.png" alt="MARISTELA">
+                            <div class="project-overlay">
+                                <a href="https://www.maristelarestaurant.com/" class="project-link" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>MARISTELA – Restaurant Online Ordering System with Forecasting</h4>
+                            <p>An intuitive restaurant ordering platform equipped with demand forecasting tools to optimize inventory and operations.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">ReactJS </span>
+                                <span class="project-tag">TailwindCSS </span>
+                                <span class="project-tag">NextAuth </span>
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image web-project">
+                            <img src="Images/Payroll.png" alt="A1 AGRO">
+                            <div class="project-overlay">
+                                <a href="a1-agro-fertilizers-payroll-system.vercel.app" class="project-link" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>A1 AGRO – Payroll Management System</h4>
+                            <p>A streamlined payroll system tailored for agricultural companies, automating salary computation, attendance tracking, and report generation.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">WordPress</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">Bootstrap</span>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image web-project">
+                            <img src="Images/naravel.png" alt="NARAVEL TALES">
+                            <div class="project-overlay">
+                                <a href="a1-agro-fertilizers-payroll-system.vercel.app" class="project-link" target="_blank">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>NARAVEL TALES – Gamified Story-Based Card Shuffling Game</h4>
+                            <p>A creative storytelling game combining narrative-driven quests with interactive card mechanics for an engaging player experience.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">WordPress</span>
+                                <span class="project-tag">PHP</span>
+                                <span class="project-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thesis Projects -->
+            <div class="project-category" id="thesis">
+                <h3 class="category-title">Thesis & Research Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-image thesis-project">
+                            <img src="Images/DOST.png" alt="Social Media Research">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Improving Customer Satisfaction in Laboratory Testing Services: A Case Study of DOST-ITDI Standards and Testing Division</h4>
+                            <p>This study examines the factors influencing customer satisfaction in the DOST-ITDI Standards and Testing Division, identifying service gaps and proposing strategies to enhance client experience and service quality.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Masteral Thesis</span>
+                                <span class="project-tag">SPSS</span>
+                                <span class="project-tag">Academic Writing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image thesis-project">
+                            <img src="Images/Articles.png" alt="Digital Marketing Research">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Artificial Intelligence in Education: A Blessing or a Threat to Human Learning?</h4>
+                            <p>This research explores the impact of artificial intelligence on education, analyzing its potential to enhance learning efficiency while addressing concerns about dependence, creativity loss, and ethical implications.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Educational Research</span>
+                                <span class="project-tag">Qualitative Analysis</span>
+                                <span class="project-tag">Case Study</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image thesis-project">
+                            <img src="Images/ManilaProThesis.png" alt="Technology Adoption Research">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>MANILAPRO: Online Residential Real Property Information System with Price Forecasting Using Business Intelligence</h4>
+                            <p>This project develops a web-based platform that provides real-time residential property information and predicts market prices using business intelligence and forecasting tools to assist buyers, sellers, and investors in decision-making.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Market Research</span>
+                                <span class="project-tag">Masteral Thesis</span>
+                                <span class="project-tag">Market Research</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image thesis-project">
+                            <img src="Images/Soc.png" alt="Consumer Behavior Research">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Social Media and Public Health Awareness: A Study on Benefits and Risks</h4>
+                            <p>This study investigates how social media influences public health awareness, highlighting its effectiveness in information dissemination as well as the potential risks of misinformation and privacy issues.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Data Analysis</span>
+                                <span class="project-tag">Consumer Research</span>
+                                <span class="project-tag">Statistics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graphics Design Projects -->
+            <div class="project-category" id="graphics">
+                <h3 class="category-title">Graphics Design Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-image graphics-project">
+                            <img src="Images/Banner2.png" alt="Brand Identity System">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Banners</h4>
+                            <p>I design visually striking banners that capture attention and effectively promote your brand, event, or product.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Branding</span>
+                                <span class="project-tag">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image graphics-project">
+                            <img src="Images/Banners.png" alt="Social Media Campaign">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Gaming Banners</h4>
+                            <p>I design visually striking banners that capture attention and effectively promote your brand, event, or product.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Social Media</span>
+                                <span class="project-tag">Photoshop</span>
+                                <span class="project-tag">Content Creation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image graphics-project">
+                            <img src="Images/Logo.png" alt="Print Design Portfolio">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>logo</h4>
+                            <p>I create clean and memorable logos that represent your brand’s identity and leave a lasting impression.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Adobe photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image graphics-project">
+                            <img src="Images/Logo2.png" alt="Motion Graphics Reel">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>logo</h4>
+                            <p>I create clean and memorable logos that represent your brand’s identity and leave a lasting impression.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Adobe Photoshop</span>                   
+                           </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-image graphics-project">
+                            <img src="Images/Streamers.png" alt="Motion Graphics Reel">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" target="_blank">View</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Hiring Streamer</h4>
+                            <p>I design engaging hiring streamer posters that attract talented gamers and showcase your brand’s professional appeal.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Adobe Photoshop</span>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Feedback Section -->
+    <section id="feedback" class="section feedback">
+        <div class="container">
+            <h2 class="section-title fade-in">Client Feedback</h2>
+            <div class="feedback-grid">
+                <div class="feedback-card fade-in">
+                    <div class="feedback-text">
+                        "Thanks God for printing na daw sya and book bind natapos din sa wakas. Contact kita again ah as researcher Baka mag enrol ako sa PHD."
+                    </div>
+                    <div class="feedback-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <h4>Sir Paul</h4>
+                            <p>PhD Candidate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card fade-in">
+                    <div class="feedback-text">
+                        "Ayos to bossing ah. Will contact you again soon. no problem. salamat din. galing kasi sa landbank papasa ko sayo eh kelangan ng text confirmation para makapasa kaso wala signal dito sa office."
+                    </div>
+                    <div class="feedback-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Sir Michael</h4>
+                            <p>Working Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card fade-in">
+                    <div class="feedback-text">
+                        "Sir Mark, thank you so much po ulit. Wag po sana kayo mag sawa na tulungan ako sa studies ko. Okay lang po sir. Merry Christmas po."
+                    </div>
+                    <div class="feedback-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <h4>Ma'am Caithlyn</h4>
+                            <p>Taking Masterals Degree</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card fade-in">
+                    <div class="feedback-text">
+                        "Legit po si mark. Ma send mo references mark. sana all po, may talent sa ganyan hehe. thank you po uliti😊. Shelemet. Graduate na talaga ko."
+                    </div>
+                    <div class="feedback-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <h4>Sir Carlo</h4>
+                            <p>Recent Graduate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section id="why-choose" class="section why-choose">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Choose Me</h2>
+            <div class="reasons-grid">
+                <div class="reason-card fade-in">
+                    <h3>Versatile Skill Set</h3>
+                    <p>With expertise spanning from academic research to full-stack web development and graphic design, I offer a unique combination of analytical thinking and creative execution. This allows me to approach projects from multiple perspectives and deliver comprehensive solutions.</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <h3>Quality & Attention to Detail</h3>
+                    <p>I take pride in delivering work that exceeds expectations. Every project receives my full attention, from the initial concept to the final implementation. I'm committed to producing high-quality results that are both visually appealing and functionally robust.</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <h3>Client-Centric Approach</h3>
+                    <p>Your vision is my priority. I work closely with clients to understand their goals, preferences, and constraints, ensuring the final product aligns perfectly with their needs. Clear communication and timely updates are integral to my workflow.</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <h3>Modern Tech Stack</h3>
+                    <p>I leverage cutting-edge technologies like ReactJS, NextJS, TypeScript, and TailwindCSS to build fast, scalable, and maintainable applications. My development approach ensures your project is built with the latest best practices and industry standards.</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <h3>Research-Backed Solutions</h3>
+                    <p>My background in academic research means I approach every project with a methodical, evidence-based mindset. Whether designing a user interface or developing a web application, I incorporate user research and data to inform decisions.</p>
+                </div>
+                <div class="reason-card fade-in">
+                    <h3>Reliability & Professionalism</h3>
+                    <p>With 6+ years of experience and 250+ completed projects, I've built a reputation for reliability and professionalism. I meet deadlines, stay within budget, and maintain open lines of communication throughout our collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Let's Connect</h2>
+            <div class="contact-content">
+                <!-- Contact Form on Left -->
+                <div class="contact-form-container fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info on Right -->
+                <div class="contact-info-sidebar fade-in">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>trajano.mark0826@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📱 WhatsApp</h3>
+                        <p>+63 (992) 297-2119</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Facebook</h3>
+                       <a href="www.facebook.com/superrmarky" class="contact-link">My Facebook Account</a>
+                    </div>
+                     <div class="contact-item">
+                        <h3>🔗 LinkedIn</h3>
+                       <a href="https://www.linkedin.com/in/kramzxc/" class="contact-link">My LinkedIn Account</a>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <p class="contact-cta fade-in">
+                    Ready to bring your vision to life? Let's discuss your next project and create something amazing together.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Mark Christian. Crafted with ❤️ and lots of ☕</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top">↑</button>
+    <script src="script.js"></script>
+
+    <script>
+    // Check if CSS is loaded
+    console.log('CSS loaded:', document.styleSheets.length > 0);
+    
+    // Check if JS is loaded
+    console.log('Script running - if you see this, JS is loaded');
+    
+    // Check if images path is correct
+    console.log('Testing image path...');
+</script>
+</body>
+</html>
